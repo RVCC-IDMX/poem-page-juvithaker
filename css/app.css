@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    background-color: #F5F5DC; 
+    color: #2F4F4F; 
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+  
+  p {
+    margin: 2em 0;
+  }
+  
+  h1 {
+    color: #8B0000; 
+    text-align: center;
+    font-size: 2.5em;
+    grid-column: 2 / span 1; 
+    font-family: 'DM Serif Text', serif;
+  }
