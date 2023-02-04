@@ -93,17 +93,29 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-items: center;
   padding: 2rem 0.25rem 1rem;
   color: rgb(204, 221, 255);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-family: "El Messiri", sans-serif;
   font-size: 1.2em;
   line-height: 1.6em;
-  text-align: center;
 }
 
-p {
-  margin: 2em 0;
+.stanza {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+p:nth-of-type(even) {
+  padding-left: 4ch;
+}
+
+.first-letter {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 h1 {
