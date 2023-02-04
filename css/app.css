@@ -87,7 +87,7 @@ select {
 }
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1579786695384-b75487cd0411?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80); /* replace with the URL of the image you want to use */
+  background-image: url(../images/photo-1579786695384-b75487cd0411.jpeg); /* replace with the URL of the image you want to use */
   background-size: cover;
 
   display: grid;
