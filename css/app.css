@@ -95,7 +95,7 @@ body {
   gap: 2rem;
   padding: 2rem 0.25rem 1rem;
   color: rgb(204, 221, 255);
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-family: "El Messiri", sans-serif;
   font-size: 1.2em;
   line-height: 1.6em;
