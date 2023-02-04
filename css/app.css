@@ -87,12 +87,13 @@ select {
 }
 
 body {
+  background-color: black;
   background-image: url(../images/photo-1579786695384-b75487cd0411.jpeg); /* replace with the URL of the image you want to use */
   background-size: cover;
-
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #f5f5dc;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 0.25rem 1rem;
   color: rgb(204, 221, 255);
   text-shadow: 2px 2px rgb(0, 0, 0);
   font-family: "El Messiri", sans-serif;
