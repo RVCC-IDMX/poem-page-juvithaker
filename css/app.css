@@ -86,15 +86,20 @@ select {
   box-sizing: border-box;
 }
 
+/*
+Note: my Clamp generator is at
+https://clamp.font-size.app/
+*/
+
 body {
   background-color: black;
-  background-image: url(../images/photo-1579786695384-b75487cd0411.jpeg); /* replace with the URL of the image you want to use */
+  background-image: url(../images/photo-1579786695384-b75487cd0411.jpeg); /* Image by: Bent Hertema */
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   justify-items: center;
-  padding: 2rem 0.5rem 1rem;
+  padding: 2rem 0.25rem 1rem;
   color: rgb(204, 221, 255);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-family: "El Messiri", sans-serif;
@@ -112,19 +117,25 @@ header {
 .stanza {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding-bottom: 3rem;
-  line-height: 1.6em;
-  font-size: clamp(1rem, 0.619rem + 1.9048vw, 3rem);
+  gap: 0.8rem;
+  padding-bottom: 4rem;
+  font-size: clamp(0.9rem, 0.6905rem + 1.0476vw, 2rem);
+  letter-spacing: 2px;
+  line-height: 1;
 }
 
 p:nth-of-type(even) {
-  padding-left: 4ch;
+  padding-left: clamp(0.625rem, -0.0179rem + 3.2143vw, 4rem);
 }
 
+.first-line {
+  line-height: 0.75;
+}
 .first-letter {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
+  padding-right: 3px;
+  display: inline-block;
 }
 
 h1 {
@@ -140,7 +151,6 @@ h2 {
   font-size: clamp(2.5rem, 2.0238rem + 2.381vw, 5rem);
 }
 
-h3 {
-  text-align: center;
-  font-size: 1em;
+footer {
+  font-size: clamp(0.9rem, 0.6905rem + 1.0476vw, 2rem);
 }
