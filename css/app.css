@@ -1,13 +1,101 @@
+/* Andy Bell's reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End Andy Bell's reset */
+
+/* My Styles */
+
+/* My reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(https://images.unsplash.com/photo-1579786695384-b75487cd0411?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80); /* replace with the URL of the image you want to use */
   background-size: cover;
-  
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  background-color: #F5F5DC; 
-  color: rgb(204, 221, 255); 
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f5f5dc;
+  color: rgb(204, 221, 255);
   text-shadow: 2px 2px rgb(0, 0, 0);
-  font-family: 'El Messiri', sans-serif;
+  font-family: "El Messiri", sans-serif;
   font-size: 1.2em;
   line-height: 1.6em;
   text-align: center;
@@ -18,36 +106,31 @@ p {
 }
 
 h1 {
-  
   text-decoration-line: overline;
-  color: #e9d365; 
+  color: #e9d365;
   text-shadow: 2px 2px rgb(0, 0, 0);
   text-align: center;
   font-size: 2.5em;
-  grid-column: 2 / span 1; 
-  font-family: 'DM Serif Text', serif;
+  grid-column: 2 / span 1;
 }
 
-h2{
-  color: #fcffd9; 
+h2 {
+  color: #fcffd9;
   font-size: 1.5em;
-  font-family: 'DM Serif Text', serif;
 }
 
-h3{
+h3 {
   text-align: center;
   font-size: 1em;
-
 }
-
 
 @media only screen and (max-width: 800px) {
   body {
-      font-size: 1em;
+    font-size: 1em;
   }
-  
+
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
 
